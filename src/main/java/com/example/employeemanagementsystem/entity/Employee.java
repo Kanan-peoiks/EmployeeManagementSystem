@@ -35,4 +35,9 @@ public class Employee {
     message = "Telefon nomresi standartlarina uygun olaraq qeyd edin.")
     private String phoneNumber;
 
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY) //coxlu isci olacaq, bir department olacaq
+    @JoinColumn(name = "employee_id")
+    private Department department;
+
 }
