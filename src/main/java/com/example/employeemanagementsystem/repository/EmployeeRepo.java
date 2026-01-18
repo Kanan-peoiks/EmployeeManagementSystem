@@ -11,7 +11,7 @@ import java.util.List;
 //UCUNCU REPO YARADILIR
 
 @Repository
-public interface EmployeeRepo extends JpaRepository<Employee,Integer> {
+public interface EmployeeRepo extends JpaRepository<Employee,Long> {
 
 
     @Query("SELECT e from Employee e WHERE e.department.id = :departmentId")

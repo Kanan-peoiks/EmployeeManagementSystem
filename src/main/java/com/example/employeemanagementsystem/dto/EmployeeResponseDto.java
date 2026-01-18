@@ -12,5 +12,6 @@ public class EmployeeResponseDto {
     private String fullName;
     private String email;
     private String phoneNumber;
+    private String adress;
     private Long departmentId;
 }
