@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//ILK ENTITY YAZILIR
+
 @Entity
 @Data
 @NoArgsConstructor
