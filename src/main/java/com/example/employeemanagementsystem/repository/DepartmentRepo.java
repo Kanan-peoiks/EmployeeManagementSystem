@@ -8,6 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface DepartmentRepo extends JpaRepository<Department,Long> {
 
 
-
-
+    Long id(Long id);
 }

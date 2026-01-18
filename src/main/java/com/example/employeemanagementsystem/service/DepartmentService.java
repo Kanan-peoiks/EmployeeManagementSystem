@@ -3,8 +3,8 @@ package com.example.employeemanagementsystem.service;
 import com.example.employeemanagementsystem.dto.DepartmentRequestDto;
 import com.example.employeemanagementsystem.dto.DepartmentResponseDto;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import java.awt.print.Pageable;
 
 public interface DepartmentService {
 
