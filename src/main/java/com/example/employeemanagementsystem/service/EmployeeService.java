@@ -12,7 +12,7 @@ import java.util.List;
 public interface EmployeeService {
 
     //CREATE
-    Employee createEmployee(EmployeeRequestDto employeeRequestDto);
+    EmployeeResponseDto createEmployee(EmployeeRequestDto employeeRequestDto);
 
     //READ
     List<EmployeeResponseDto> getAllEmployees();

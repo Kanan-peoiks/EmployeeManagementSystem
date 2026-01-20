@@ -23,7 +23,7 @@ public class EmployeeServiceImp implements EmployeeService {
     private final DepartmentRepo departmentRepo;
 
     @Override
-    public Employee createEmployee(EmployeeRequestDto employeeRequestDto) {
+    public EmployeeResponseDto createEmployee(EmployeeRequestDto employeeRequestDto) {
         Department department = departmentRepo.findById(employeeRequestDto.getDepartmentId()).orElseThrow(() ->
                 new DepartmentNotFoundException("Department not found" +  employeeRequestDto.getDepartmentId()));
 
@@ -44,8 +44,7 @@ public class EmployeeServiceImp implements EmployeeService {
         employeeResponseDto.setPhoneNumber(savedEmployee.getPhoneNumber());
         employeeResponseDto.setDepartmentId(department.getId());
 
-        return employee;}
-
+        return employeeResponseDto;}
 
     @Override
     public List<EmployeeResponseDto> getAllEmployees() {
