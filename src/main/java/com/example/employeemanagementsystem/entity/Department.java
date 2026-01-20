@@ -30,6 +30,6 @@ public class Department {
 
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL, orphanRemoval = true)
     //orphanRemoval eger bir department silinse hemin department-e aid hersey silinsin
-    private List<Employee> employees;
+    private List<Employee> employee;
 
 }
